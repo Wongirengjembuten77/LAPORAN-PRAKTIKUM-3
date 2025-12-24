@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tampilan CV</title>
+
+<style>
+*{
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f2f2f2;
+    margin:0;
+    padding:40px 0;
+}
+
+/* ===== CONTAINER ===== */
+.cv-container{
+    width:900px;
+    margin:auto;
+    background:white;
+    display:flex;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar{
+    width:30%;
+    background:#eef1f3;
+    padding:25px;
+}
+
+.sidebar h3{
+    font-size:14px;
+    letter-spacing:1px;
+    margin-bottom:10px;
+    border-bottom:1px solid #ccc;
+    padding-bottom:5px;
+}
+
+.sidebar p{
+    font-size:13px;
+    margin:5px 0;
+}
+
+.sidebar .section{
+    margin-bottom:25px;
+}
+
+/* ===== CONTENT ===== */
+.content{
+    width:70%;
+    padding:30px;
+}
+
+.header{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    border-bottom:1px solid #ddd;
+    padding-bottom:20px;
+}
+
+.header img{
+    width:110px;
+    height:110px;
+    object-fit:cover;
+}
+
+.header h1{
+    margin:0;
+    font-size:24px;
+    letter-spacing:1px;
+}
+
+.header span{
+    font-size:14px;
+    color:gray;
+}
+
+/* ===== CONTENT SECTION ===== */
+.content-section{
+    margin-top:25px;
+}
+
+.content-section h3{
+    font-size:14px;
+    background:#f0f0f0;
+    padding:6px 10px;
+    margin-bottom:10px;
+}
+
+.content-section p,
+.content-section li{
+    font-size:13px;
+    line-height:1.6;
+}
+
+.content-section ul{
+    padding-left:18px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+    body{
+        padding:20px 0;
+    }
+
+    .cv-container{
+        width:95%;
+        flex-direction:column;
+    }
+
+    .sidebar,
+    .content{
+        width:100%;
+    }
+
+    .header{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .header img{
+        width:140px;
+        height:140px;
+    }
+
+    .header h1{
+        font-size:22px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="cv-container">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+
+        <div class="section">
+            <h3>KONTAK</h3>
+            <p><strong>Whatsapp</strong><br>+62 821 1234 5678</p>
+            <p><strong>LinkedIn</strong><br>Glenn Silalahi</p>
+            <p><strong>Email</strong><br>Glenn77.@gmail.com</p>
+            <p><strong>Domisili</strong><br>Duri Kosambi, Cengkareng, Jakarta Barat</p>
+        </div>
+
+        <div class="section">
+            <h3>KEAHLIAN</h3>
+            <p>Vehicle dynamics dasar</p>
+            <p>Race strategy</p>
+            <p>Setup mobil balap</p>
+            <p>Analisis data performa</p>
+            <p>Aerodinamika dasar</p>
+        </div>
+
+        <div class="section">
+            <h3>SOFTWARE</h3>
+            <p>MATLAB</p>
+            <p>MoTeC i2 Pro</p>
+            <p>RaceStudio (AIM)</p>
+            <p>SolidWorks / CATIA</p>
+            <p>Power BI / Tableau</p>
+        </div>
+
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+        <div class="header">
+            <img src="fotoglen.jpg.jpg" alt="Foto Profil">
+            <div>
+                <h1>Glenn S</h1>
+                <span>S1 Teknik Mesin</span>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>PROFIL</h3>
+            <p>
+                Lulusan S1 Teknik Mesin yang berfokus pada analisis mesin dan performa
+                kendaraan balap dengan pendekatan berbasis data di lingkungan motorsport.
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h3>PENGALAMAN KERJA</h3>
+
+            <p><strong>Bengkel Amba77Speedshop – Tuning</strong> (2020–2023)</p>
+            <ul>
+                <li>Melayani pelanggan secara profesional</li>
+                <li>Mencatat dan menyampaikan pesanan</li>
+                <li>Menjaga kebersihan area kerja</li>
+            </ul>
+
+            <p><strong>Mercedes-AMG Petronas F1 – Engineering</strong> (2019–2020)</p>
+            <ul>
+                <li>Analisis performa mobil balap</li>
+                <li>Penyusunan laporan data kecepatan</li>
+                <li>Evaluasi strategi balap</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h3>PENDIDIKAN</h3>
+            <p>
+                <strong>S1 Teknik Mesin</strong><br>
+                Institut Teknologi PLN<br>
+                2015 – 2019
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h3>PELATIHAN KERJA</h3>
+            <p>
+                Mercedes-AMG Petronas F1 Engineering Program – 2017<br>
+                Ferrari Motorsport Engineering Training – 2019<br>
+                Red Bull Racing Engineering Academy – 2021
+            </p>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
